@@ -1,0 +1,471 @@
+/*------------------------------*/
+/* sets color and size for body */
+body {
+	background-color: rgb(50, 1, 1);
+	height: 100%;
+	width: 100%;
+}
+/*---------------------------------------------------*/
+/*sets image, size, and colors for header and footer */
+header {
+	height: 150px;
+}
+
+header h1 {
+	float: left;
+	margin-left: 50px;
+	font-size: 5em;
+	font-family: brush script std;
+	margin-top: 75px;
+}
+
+header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+header h1 a:hover {
+	color: rgb(51, 204, 255);
+}
+
+header img {
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+
+footer {
+	
+	height: 30px;
+	bottom: 0;
+	width: 100%;
+}
+
+footer p {
+	color: rgb(51, 204, 255);
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: rgb(50, 1, 1);
+    clear: left;
+    text-align: center;
+}
+/*----------------------------------------------------*/
+/* Twitter and Gmail icon sizes, placement, and color */
+span.icon-twitter, span.icon-gmail{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	padding-left: 0;
+}
+
+span.icon-twitter:hover, span.icon-gmail:hover {
+	color: rgb(51, 204, 255);
+}
+
+span.icon-twitter {
+	float: right;
+	text-align: center;
+	margin-right: 150px;
+	padding: 14px 16px;
+	margin-top: -50px;
+}
+
+span.icon-gmail {
+	display: inline-block;
+	float: right;
+	text-align: center;
+	padding: 14px 16px;
+	margin-right: 95px;
+	margin-top: -68px;
+}
+/* navigation bar */
+ul {
+    list-style-type: none;
+	width: 100%;
+    margin: 0;
+    padding: 0;
+	padding-left: 95px;
+    overflow: hidden;
+    background-color: rgb(245, 137, 137);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*---------------------------------------*/
+/* Change the color of nav link on hover */
+li a:hover, li a:active {
+    background-color: #fff;
+	color: rgb(51, 204, 255);
+	border-bottom: 3px solid rgb(51, 204, 255);
+}
+
+/*-----------------------------------------------*/
+/* color, position and size of aside and article */
+aside {
+	display: block;
+	background-color: #fff;
+	border: 3px solid rgb(245, 137, 137);
+	border-radius: 15px;
+	float: left;
+	margin-left: 75px;
+	margin-top: 50px;
+	width: 325px;
+	padding: 1em;
+}
+
+aside img {
+	margin-top: 5px;
+	height: 200px;
+	width: 320px;
+	border: 3px solid rgb(51, 204, 255);
+	border-radius: 5px;
+	
+}
+
+article {
+	background-color: #fff;
+    margin-left: 500px;
+	margin-top: 50px;
+	margin-right: 75px;
+    border: 3px solid rgb(245, 137, 137);
+	border-radius: 15px;
+    padding: 1em;
+}
+
+/*---------------------------------------------------*/
+/* size, color, and position of div bar above footer */
+div{
+    background-color: rgb(245, 137, 137);
+	height: 15px;
+    margin-top: 20px;
+    padding: 1em;
+	bottom: 20px;
+	width: 100%;
+}
+
+hr {
+	width: 75%;
+}
+
+/*--------------------------------*/
+/* styling for monthly deal image */
+#monthly_deal {
+	text-align: center;
+	background-color: #fff;
+	border: 3px solid rgb(245, 137, 137);
+	border-radius: 15px;
+	margin-bottom: 100px;
+	margin-left: 750px;
+	height: 525px;
+	width: 375px;
+	line-height: 150%;
+}
+#monthly_deal img {
+	border: 3px solid rgb(51, 204, 255);
+	border-radius: 5px;
+}
+
+/*------------------------*/
+/* styling for calculator */
+#calculator {
+	text-align: center;
+	background-color: rgb(50, 1, 1);
+	color: white;
+	margin-top: -30%;
+	margin-right: 5%;
+	height: 225px;
+	width: 300px;
+	float: right;
+	display: block;
+	border: 3px solid rgb(245, 137, 137);
+	border-radius: 15px;
+}
+
+#calculator label, #calculator input {
+	margin: 5px;
+}
+
+/*--------------------*/
+/*styling for coupons */
+
+#coupon {
+	float: left;
+	clear: both;
+	display: block;
+	width: 500px;
+	height: 150px;
+	margin-left: 75px;
+	background-color: #fff;
+	border: 3px dashed rgb(245, 137, 137);
+	border-radius: 15px;
+}
+
+#coupon h1 {
+	padding-right: 10px;
+	float: left;
+	font-size: 80px;	
+	margin-top: 25px;
+}
+
+#coupon p {
+	display: block;
+	margin: 30px;
+	font-size: 1.5em;	
+}
+
+#coupon p em {
+	font-size: .75em;	
+}
+
+#date { 
+	display: inline-block; 
+	margin-right: 15px; 
+	margin-top: 0; 
+	color: #fff;
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+	
+header {
+	height: 75px;
+}
+
+header h1 {
+	text-align: center;
+	margin-left: 15%;
+	font-size: 3em;
+	font-family: brush script std;
+	margin-top: 30px;
+}
+
+header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+header h1 a:hover {
+	color: rgb(51, 204, 255);
+}
+
+header img {
+	
+	margin-left: 30%;
+	margin-bottom: 15px;
+}
+
+footer {
+	clear: both;
+	margin-left: -50px;
+	height: 30px;
+	bottom: 0;
+	width: 100%;
+}
+
+footer p#date {
+	margin-right: 10px;
+	clear: both;	
+}
+
+footer p {
+	color: rgb(51, 204, 255);
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: rgb(50, 1, 1);
+    text-align: center;
+}
+
+ul.topnav {
+	width: 100%;
+    list-style-type: none;
+    margin-left: 2.5%;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(245, 137, 137);
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #fff; 
+	color:rgb(51, 204, 255);
+}
+
+ul.topnav li.right {
+	float: right;
+}
+
+
+ul.topnav li.right,
+ul.topnav li {float: none;}
+
+aside {
+	display: block;
+	background-color: #fff;
+	border: 3px solid rgb(245, 137, 137);
+	border-radius: 15px;
+	float: left;
+	margin-left: 75px;
+	margin-top: 75px;
+	width: 325px;
+	padding: 1em;
+}
+
+aside img {
+	margin-top: 5px;
+	height: 200px;
+	width: 320px;
+	border: 3px solid rgb(51, 204, 255);
+	border-radius: 5px;
+	
+}
+
+article {
+	background-color: #fff;
+	margin-top: 50px;
+    border: 3px solid rgb(245, 137, 137);
+	border-radius: 15px;
+    padding: 1em;
+	clear: both;
+	float: left;
+	margin-left: 75px;
+	width: 325px;
+}
+
+div{
+    background-color: rgb(245, 137, 137);
+	height: 15px;
+    margin-bottom: 20px;
+    padding: 1em;
+	bottom: 20px;
+	width: 100%;
+}
+
+div#footer-bar {
+	clear: both;
+}
+
+hr {
+	width: 75%;
+}
+
+span.icon-twitter, span.icon-gmail{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	padding-left: 0;
+}
+
+span.icon-twitter:hover, span.icon-gmail:hover {
+	color: rgb(51, 204, 255);
+}
+
+span.icon-twitter {
+	float: right;
+	text-align: center;
+	margin-right: 250px;
+	padding: 14px 16px;
+	margin-top: 32px;
+}
+
+span.icon-gmail {
+	display: inline-block;
+	float: right;
+	text-align: center;
+	padding: 14px 16px;
+	margin-right: 130px;
+	margin-top: -55px;
+}
+
+#coupon {
+	float: left;
+	clear: both;
+	display: block;
+	width: 350px;
+	height: 200px;
+	margin-left: 50px;
+	background-color: #fff;
+	border: 3px dashed rgb(245, 137, 137);
+	border-radius: 15px;
+}
+
+#coupon h1 {
+	padding-right: 10px;
+	float: left;
+	font-size: 80px;	
+	margin-top: 25px;
+}
+
+#coupon p {
+	display: block;
+	margin: 30px;
+	font-size: 1.5em;	
+}
+
+#coupon p em {
+	font-size: .75em;	
+}
+
+#monthly_deal {
+	text-align: center;
+	background-color: #fff;
+	border: 3px solid rgb(245, 137, 137);
+	border-radius: 15px;
+	margin-bottom: 100px;
+	margin-left: 40px;
+	height: 525px;
+	width: 375px;
+	line-height: 150%;
+	clear: both;
+}
+#monthly_deal img {
+	border: 3px solid rgb(51, 204, 255);
+	border-radius: 5px;
+}
+
+/*------------------------*/
+/* styling for calculator */
+#calculator {
+	text-align: center;
+	background-color: rgb(50, 1, 1);
+	color: white;
+	margin-top: -5%;
+	margin-right: 50px;
+	height: 225px;
+	width: 300px;
+	float: right;
+	display: block;
+	border: 3px solid rgb(245, 137, 137);
+	border-radius: 15px;
+}
+
+#calculator label, #calculator input {
+	margin: 5px;
+}
+
+}

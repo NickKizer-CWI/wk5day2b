@@ -1,0 +1,135 @@
+<!doctype html>
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="Nicholas Kizer" />
+	<meta name="classification" content="baked goods" />
+	<meta name="description" content="a place to find all your favorite things to satisfy your sweet tooth" />
+	<meta name="generator" content="Notepad++" />
+	<meta name="keywords" content="baked goods, bakery, bread, doughnut, bagel, cake, pie, cookies, cupcake, muffin,
+		scones, tarts, gluten-free, the sweet spot" />
+	<meta name="owner" content="The Sweet Spot" />
+	
+	<title>FAQ</title>
+	
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+	<script src="js/JS_Support.js"></script> 
+	
+	<style>
+		* { margin: 0; padding: 0; }
+		main#faqs { text-align: center; width: 600px; margin-left: 30%; }
+		hr { color: #fff; width: 100%; margin: 15px 0 15px 0; }
+		h1 { color: #fff; font-size: 2em; }
+		h2 { color: #fff; font-size: 120%; padding: .25em 0 .25em 25px; cursor: pointer; }
+		a { color: #fff; text-decoration: none; }
+		a:hover { color: rgb(51, 204, 255); }	
+		div#accordian { background-color: rgb(50, 1, 1); display: none; }
+		div#accordian.open { display: block; }
+		p#accordian_answer { color: #fff; margin-top: -25px; padding-bottom: .25em; padding-left: 25px; }
+
+	</style>	
+		
+    <script>
+		var $ = function(id) { return document.getElementById(id); };
+
+		var toggle = function() {
+			var link = this;                         
+			var h2 = link.parentNode;                        
+			var div = h2.nextElementSibling; 
+		
+			 
+			if (h2.hasAttribute("class")) { 
+				h2.removeAttribute("class");	
+				h2.className = "";
+			} else { 
+				h2.setAttribute("class", "minus"); 
+				h2.className = "minus";
+			}
+		
+			
+			if (div.hasAttribute("class")) { 
+				div.removeAttribute("class");
+				div.className = "";
+			} else { 
+				div.setAttribute("class", "open"); 
+				div.className = "open";
+			} 
+		};
+		
+		window.onload = function() {
+			
+			var faqs = $("faqs");
+			var linkElements = faqs.getElementsByTagName("a");
+			
+			 
+			for (var i = 0; i < linkElements.length; i++ ) {
+				linkElements[i].onclick = toggle;
+			}
+			 
+			linkElements[0].focus();       
+		};
+	</script>    
+</head>
+
+<body>
+
+<header>
+   <a href="index.html"><img src="images/cupcake.png" alt="cupcake" /></a>
+   <h1><a href="index.html">The Sweet Spot</a></h1>
+   
+   
+</header>
+  
+<!-- Navigation bar -->
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="monthly_deal.html">Monthly Deal</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="change_calculator.html">Change Calculator</a></li>
+  <li><a href="roll_over.html">Roll Over</a></li>
+  <li><a href="task_manager.html">Task Manager</a></li>
+  
+  <li style="margin-left: 640px;"><a href="sign_up.html" style="">Register</a></li>
+  
+</ul>  
+
+  <a href="#" target="_new">
+		<span class="icon-twitter"><span class="social-text"></span></span>
+	</a><br />
+  <a href="contact_form.html">
+		<span class="icon-gmail"><span class="social-text"></span></span>
+	</a>
+    
+    <main id="faqs">
+        <h1>The Sweet Spot's FAQs</h1>
+        <hr>
+        
+        <h2><a href="#" >Is there a limit to how many Monthly Deals I can pre-order?</a></h2>
+        <div id="accordian">
+            <p id="accordian_answer">Yes, the quantity varies each month dependant on what the deal is. You will always find the limit under the price calculator.</p>
+        </div>
+        <h2><a href="#">Do you have Gluten-Free products?</a></h2>
+        <div id="accordian">
+            <p id="accordian_answer">Yes, we have a small variety of Gluten-Free products ranging from cookies, cupcakes, cakes, and loaves of bread. All of our Gluten-Free products are marked with a blocked out wheat symbol.</p>
+        </div>
+        <h2><a href="#">Do you give your recipes out?</a></h2>
+        <div id="accordian">
+            <p id="accordian_answer">No, every recipe is a secret recipe passed down from generation to generation. However on some of our newer products we were not the ones to create it. Just ask the cashier and they can help you with a select recipe guide for your favorites.</p>
+            
+        </div>
+    </main>
+</body>
+
+<div></div>
+
+<footer>
+	<p id="date"></p>
+	<p>2013 Copyright © TheSweetSpot.com</p>
+</footer>
+<script>
+	date()
+</script>
+<noscript>August 2016</noscript>
+
+</html>

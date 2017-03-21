@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="Nicholas Kizer" />
+	<meta name="classification" content="baked goods" />
+	<meta name="description" content="a place to find all your favorite things to satisfy your sweet tooth" />
+	<meta name="generator" content="Notepad++" />
+	<meta name="keywords" content="baked goods, bakery, bread, doughnut, bagel, cake, pie, cookies, cupcake, muffin,
+		scones, tarts, gluten-free, the sweet spot" />
+	<meta name="owner" content="The Sweet Spot" />
+
+	<title>Task Manager</title>
+
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+	<script src="js/JS_Support.js"></script> 
+    <script src="js/tm_objects.js"></script>
+    <script src="js/tm_storage.js"></script>
+    <script src="js/tm_task.js"></script>
+    <script src="js/tm_tasklist.js"></script>
+    <script src="js/task_list.js"></script>
+    
+    <style>
+		hr 			{ float: left; width: 27%; margin-top: -10px; }
+		div.clear 	{ background-color: rgba(0, 0, 0, 0); }
+		main 		{ width: 55%; margin-left: 30%; border: 3px solid rgb(245, 137, 137); border-radius: 15px; padding: 10px; clear: both;}
+		h1 			{ font-size: 2em; color: #fff; margin-bottom: .5em; }
+		label 		{ float: left; width: 8em; color: #fff; }
+		input 		{ width: 97%; margin-right: 1em; margin-bottom: 1em; }
+		#tasks 		{ float: right; width: 85%; margin: 0 0 .5em; padding: 1em; border: 2px solid black; }
+		#tasks a 	{ margin-right: 0.5em; }
+		p 			{ margin: 0; padding-bottom: .5em; }
+		.clear 		{ clear: both; }
+	</style>
+</head>
+
+<body>
+
+<header>
+   <a href="index.html"><img src="images/cupcake.png" alt="cupcake" /></a>
+   <h1><a href="index.html">The Sweet Spot</a></h1>
+</header>
+  
+<!-- Navigation Bar -->
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="monthly_deal.html">Monthly Deal</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="change_calculator.html">Change Calculator</a></li>
+  <li><a href="roll_over.html">Roll Over</a></li>
+  <li><a href="task_manager.html">Task Manager</a></li>
+  
+  <li style="margin-left: 640px;"><a href="sign_up.html" style="">Register</a></li>
+  
+</ul>  
+  
+  <a href="#" target="_new">
+		<span class="icon-twitter"><span class="social-text"></span></span>
+	</a><br />
+  <a href="contact_form.html">
+		<span class="icon-gmail"><span class="social-text"></span></span>
+	</a>
+    
+    <!-- Task Manager -->
+    
+    <main>
+        <h1>Task Manager</h1>
+        <hr><br>
+        
+        <div id="tasks" style="background-color: rgba(255, 255, 255, 1);"></div>
+        <label for="task">Task:</label><br>
+            <input type="text" name="task" id="task"><br>
+        <label for="date">Date:</label><br>
+            <input type="text" name="date" id="date"><br>
+        <input type="button" name="add_task" id="add_task" value="Add Task"><br>
+        <input type="button" name="clear_tasks" id="clear_tasks" value="Clear Tasks">
+        <div class="clear"></div>
+    </main> 
+    
+    <!-- Footer -->
+    
+    <div></div>
+
+<footer>
+	<p id="date"></p>
+    <span id="theTime"></span>
+	<p>2013 Copyright © TheSweetSpot.com</p>
+</footer>
+<script>
+	date()
+</script>
+<noscript>August 2016</noscript>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="UTF-8" />
+	<meta name="author" content="Nicholas Kizer" />
+	<meta name="classification" content="baked goods" />
+	<meta name="description" content="a place to find all your favorite things to satisfy your sweet tooth" />
+	<meta name="generator" content="Notepad++" />
+	<meta name="keywords" content="baked goods, bakery, bread, doughnut, bagel, cake, pie, cookies, cupcake, muffin,
+		scones, tarts, gluten-free, the sweet spot" />
+	<meta name="owner" content="The Sweet Spot" />
+
+	<title>Register</title>
+
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="css/fonts.css" rel="stylesheet" type="text/css" />
+	<script src="js/JS_Support.js"></script>
+    <script src="js/register.js"></script>
+    
+    <style>
+		 h1{ color: #fff; margin-left: 200px; font-size: 3em; }
+		 hr { color: #fff; width: 10%; margin-left: 200px; margin-top: -20px; }
+		 p#content { color: #fff; margin-left: 200px; }
+		 #faqLink { text-decoration: none;  color: rgb(51, 204, 255); }
+		 #faqLink:hover { color: #fff; }
+		 #registration_form { border: 3px solid rgb(245, 137, 137); border-radius: 15px;  width: 475px; padding: 5px; margin-top: 50px; 
+		 					  margin-left: 33%; color: #fff; }
+		 #register, reset_form { margin-left: 35%; margin-top: 20px; }
+		 label { float: left; width: 9em; }
+		 input { margin: 15px; }
+	</style>
+    
+</head>
+
+<header>
+   <a href="index.html"><img src="images/cupcake.png" alt="cupcake" /></a>
+   <h1><a href="index.html">The Sweet Spot</a></h1>
+</header>
+  
+<!-- Navigation Bar -->
+<ul class="topnav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="monthly_deal.html">Monthly Deal</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="change_calculator.html">Change Calculator</a></li>
+  <li><a href="roll_over.html">Roll Over</a></li>
+  <li><a href="task_manager.html">Task Manager</a></li>
+  
+  <li style="margin-left: 640px;"><a href="sign_up.html" style="">Register</a></li>
+
+</ul>  
+
+  
+  <a href="#" target="_new">
+		<span class="icon-twitter"><span class="social-text"></span></span>
+	</a><br />
+  <a href="contact_form.html">
+		<span class="icon-gmail"><span class="social-text"></span></span>
+	</a>
+
+<body>
+
+	<h1>Register</h1>
+    <hr>
+    <p id="content"> Register for awesome discounts and receive notice on future deals that you're sure to love. Be the first to get your favorites.</p>
+    
+    
+    <form action="thankyou.html" method="get"
+        name="registration_form" id="registration_form">
+    
+        <label for="email_address">E-Mail:</label>
+            <input type="text" name="email_address" id="email_address">
+            <span>*</span><br>
+        <label for="phone">Mobile Phone:</label>
+            <input type="text" name="phone" id="phone">
+            <span>*</span><br>
+        <label for="country">Newsletter:</label>
+            <select name="country" id="country">
+            	<option value="">Select an option</option>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+            <span>*</span><br>
+        <label>Contact me by:</label>         
+            <input type="radio" name="contact" id="text" value="text" checked>Text
+            <input type="radio" name="contact" id="email" value="email">Email
+            <input type="radio" name="contact" id="none" value="none">Don't contact me
+        <br>
+        <label>Terms of Service:</label>
+            <input type="checkbox" name="terms" id="terms" value="yes">I accept
+            <span>*</span><br>
+
+        <input type="button" id="register" value="Register">
+        <input type="button" id="reset_form" value="Reset">
+    </form>
+</body>
+
+<div></div>
+
+<footer>
+	<p id="date"></p>
+	<p>2013 Copyright © TheSweetSpot.com</p>
+</footer>
+<script>
+	date()
+</script>
+<noscript>August 2016</noscript>
+
+</html>
